@@ -59,6 +59,7 @@ h1 {
 	max-width: 37.5rem;
 	border-radius: 0.5rem;
 	overflow: hidden;
+	margin: 1rem 1.5rem;
 }
 
 .product-image img {
@@ -71,6 +72,10 @@ h1 {
 
 .product-image {
 	max-width: 50%;
+}
+
+.product-image-mobile {
+	display: none;
 }
 
 .product-content {
@@ -105,6 +110,7 @@ h1 {
 	display: flex;
 	padding-bottom: 2rem;
 	align-items: center;
+	max-width: 100%;
 }
 
 .current-price {
@@ -136,4 +142,23 @@ h1 {
 	padding-left: 0.8rem;
 	font-weight: 700;
 	font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+	.card-container {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.product-image {
+		display: none;
+	}
+
+	.product-image-mobile {
+		display: flex;
+	}
+
+	.product-content {
+		max-width: 100%;
+	}
 }
