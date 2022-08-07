@@ -3,6 +3,7 @@
 :root {
 	/*Primary color*/
 	--darkcyan-color: hsl(158, 36%, 37%);
+	--darkcyan-hover-color: hsl(159, 34%, 24%);
 	--cream-color: hsl(30, 38%, 92%);
 	/*Neutral*/
 	--verydarkblue-color: hsl(212, 21%, 14%);
@@ -136,6 +137,17 @@ h1 {
 	justify-content: space-around;
 	padding: 1rem 3.8rem;
 	border-radius: 0.5rem;
+}
+
+.cart-button:hover {
+	background-color: var(--darkcyan-hover-color);
+	transition: ease-in-out 0.1s;
+}
+
+.cart-button:focus {
+	outline: 0.2rem dashed var(--darkcyan-hover-color);
+	background-color: var(--darkcyan-hover-color);
+	transition: ease-in-out 0.1s;
 }
 
 .card-container span {
